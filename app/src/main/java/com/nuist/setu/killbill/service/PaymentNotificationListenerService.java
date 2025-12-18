@@ -172,7 +172,7 @@ public class PaymentNotificationListenerService extends NotificationListenerServ
 
         // Must contain at least one payment keyword
         // This avoids matching order IDs etc.
-        boolean hasKeyword = containsAny(s, "支付", "付款", "消费", "扣款", "支出", "已付款", "支付成功");
+        boolean hasKeyword = containsAny(s, "转账", "收款","支付", "付款", "消费", "扣款", "支出", "已付款", "支付成功");
         if (!hasKeyword) {
             return null;
         }
