@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_daily"
+        android:icon="@drawable/ic_nav_day"
+        android:title="@string/nav_daily" />
+    <item
+        android:id="@+id/nav_stats"
+        android:icon="@drawable/ic_nav_stats"
+        android:title="@string/nav_stats" />
+    <item
+        android:id="@+id/nav_all"
+        android:icon="@drawable/ic_nav_list"
+        android:title="@string/nav_all" />
+</menu>

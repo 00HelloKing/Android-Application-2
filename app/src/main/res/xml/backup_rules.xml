@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!-- By default, Room database will be backed up if allowBackup is true.
+         You can exclude if needed. -->
+</full-backup-content>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Save receipts into app-specific external pictures directory -->
+    <external-files-path
+        name="external_pictures"
+        path="Pictures/" />
+
+    <!-- Also allow sharing from cache if needed -->
+    <cache-path
+        name="cache"
+        path="." />
+</paths>
