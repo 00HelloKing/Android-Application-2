@@ -77,6 +77,11 @@ public class StatsFragment extends Fragment {
         binding.pieChart.setHoleRadius(55f);
         binding.pieChart.setTransparentCircleRadius(60f);
         binding.pieChart.getLegend().setEnabled(true);
+
+        // 让图例文字跟随主题
+        int textColor = MaterialColors.getColor(binding.pieChart,
+                com.google.android.material.R.attr.colorOnBackground);
+        binding.pieChart.getLegend().setTextColor(textColor);
     }
 
     private void updatePieChart(List<CategoryTotal> list) {

@@ -1,19 +1,24 @@
 pluginManagement {
     repositories {
-        gradlePluginPortal()
-        google()
+        google {
+            content {
+                includeGroupByRegex("com\\.android.*")
+                includeGroupByRegex("com\\.google.*")
+                includeGroupByRegex("androidx.*")
+            }
+        }
         mavenCentral()
+        gradlePluginPortal()
     }
 }
-
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
         google()
         mavenCentral()
-        maven { url 'https://jitpack.io' } // MPAndroidChart
+        maven { url = uri("https://jitpack.io") }
     }
 }
 
-rootProject.name = "KillBill"
-include ':app'
+rootProject.name = "killbill"
+include(":app")

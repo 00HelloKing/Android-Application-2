@@ -26,9 +26,6 @@ import java.util.regex.Pattern;
 
 /**
  * Listens for payment notifications (e.g., Alipay / WeChat).
- *
- * Instead of directly starting an Activity in background (restricted on modern Android),
- * we post our own "Tap to record" notification with a PendingIntent.
  */
 public class PaymentNotificationListenerService extends NotificationListenerService {
 

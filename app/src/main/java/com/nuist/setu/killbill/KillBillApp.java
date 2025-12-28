@@ -4,8 +4,6 @@ import android.app.Application;
 
 /**
  * Application class.
- *
- * Keeping it lightweight: Room is created lazily via AppDatabase.getInstance().
  */
 public class KillBillApp extends Application {
     @Override

@@ -8,8 +8,6 @@ import androidx.room.PrimaryKey;
 /**
  * A single expense record.
  *
- * timestamp: Unix time millis.
- * receiptUri: Uri string for a receipt photo captured by camera (optional).
  */
 @Entity(tableName = "bills")
 public class Bill {
